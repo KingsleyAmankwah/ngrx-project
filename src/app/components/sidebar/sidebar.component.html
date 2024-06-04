@@ -1,0 +1,47 @@
+<button
+  class="group flex items-center gap-2 shadow-lg rounded-full px-5 mb-5 ml-3 h-[48px] hover:shadow-md transition-[box-shadow] duration-200"
+  [routerLink]="'/contact/add'"
+>
+  <mat-icon class="text-xl w-12 h-12">add_outline</mat-icon>
+
+  <span
+    class="text-[#5f6368] group-hover:text-[#1973E8] font-medium text-sm transition-colors duration-200"
+    >Create Contact</span
+  >
+</button>
+
+<div class="flex flex-col mb-6">
+  <button
+    class="flex items-center justify-between font-medium py-2 px-5 rounded-r-full [&:not(.active)]:text-[#5f6368] [&:not(.active)]:hover:bg-[#F1F3F4] [&:is(.active)]:bg-[#E8F0FE] [&:is(.active)]:text-[#1973E8] transition-colors duration-200"
+    [routerLink]="'list'"
+    [routerLinkActive]="'active'"
+  >
+    <div class="flex items-center gap-4">
+      <mat-icon class="text-xl">account_circle</mat-icon>
+      <span class="text-sm">Contacts</span>
+    </div>
+    <div>
+      <span class="text-sm">0</span>
+    </div>
+  </button>
+  <!-- <button
+    class="flex items-center justify-between font-medium py-2 px-5 rounded-r-full [&:not(.active)]:text-[#5f6368] [&:not(.active)]:hover:bg-[#F1F3F4] [&:is(.active)]:bg-[#E8F0FE] [&:is(.active)]:text-[#1973E8] transition-colors duration-200"
+    (click)="showBulkUploadPopup()"
+  >
+    <div class="flex items-center gap-4">
+      <mat-icon class="text-xl">download</mat-icon>
+      <span class="text-sm">Import</span>
+    </div>
+  </button> -->
+  <button
+    class="flex items-center justify-between font-medium py-2 px-5 rounded-r-full [&:not(.active)]:text-[#5f6368] [&:not(.active)]:hover:bg-[#F1F3F4] [&:is(.active)]:bg-[#E8F0FE] [&:is(.active)]:text-[#1973E8] transition-colors duration-200"
+    [routerLink]="'trash'"
+    [routerLinkActive]="'active'"
+  >
+    <div class="flex items-center gap-4">
+      <mat-icon class="text-xl">delete</mat-icon>
+      <span class="text-sm">Trash</span>
+    </div>
+  </button>
+</div>
+<div class="flex flex-col"></div>
